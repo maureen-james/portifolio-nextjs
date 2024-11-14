@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from 'react';
+import React from 'react';
 import NavigationBar from '../@core/components/Navigation';
 import { Container } from 'react-bootstrap';
 import About from '../@core/components/About';
@@ -10,37 +10,31 @@ import Contact from '@/@core/components/Contact';
 import Footer from '@/@core/components/Footer';
 
 const Page = () => {
-
-
-  
   return (
     <>
-
-
-      {/* navbar */}
-     
-
+      {/* Navbar */}
+      <Container>
       <NavigationBar />
-      <div class="intro">
-        <div class="title">
-          <h3>
-            I'm Maureen Mwangi
-          </h3>
-          <p>Software Developer and Web Designer</p>
+      
+      {/* Main Content */}
+        <div className="intro">
+          <div className="title">
+            <h3>I'm Maureen Mwangi</h3>
+            <p>Software Developer and Web Designer</p>
+          </div>
+          <img src="/static/images/me1.png" alt="Maureen Mwangi" className="left" />
         </div>
-        {/* <img src="/static/images/me1.png" alt="" class="left"></img> */}
-      </div>
 
-      <About />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </Container>
 
-      <Experience />
-
-      <Projects />
-      <Contact/>
-
-      <Footer/>
-     
-    </> 
+      {/* Footer */}
+      <Footer />
+    </>
   );
-}
-export default Page
+};
+
+export default Page;
