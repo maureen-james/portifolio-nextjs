@@ -28,7 +28,7 @@ const Page = () => {
             gap: "20px", // Add spacing between elements
           }}
         >
-          <div className="title" style={{ textAlign: "center", flex: 1 }}> 
+          <div id="home" className="title" style={{ textAlign: "center", flex: 1 }}> 
             <h3 style={{ marginBottom: "10px", fontWeight: "bold", fontSize: "1.8rem" }}>
               I'm Maureen Mwangi
             </h3>
@@ -48,7 +48,7 @@ const Page = () => {
         </div>
 
         {/* About Section */}
-        <div
+        <div id="about"
           style={{
             backgroundColor: "#ffffff",
             padding: "30px 15px", // Reduced padding
@@ -58,7 +58,7 @@ const Page = () => {
         </div>
 
         {/* Experience Section */}
-        <div
+        <div id="experience"
           style={{
             backgroundColor: "#f9f9f9",
             padding: "30px 15px", // Reduced padding
@@ -68,7 +68,7 @@ const Page = () => {
         </div>
 
         {/* Projects Section */}
-        <div
+        <div id="projects"
           style={{
             backgroundColor: "#eef7f6",
             padding: "30px 15px", // Reduced padding
@@ -78,7 +78,7 @@ const Page = () => {
         </div>
 
         {/* Contact Section */}
-        <div
+        <div id="contact"
           style={{
             backgroundColor: "#ffffff",
             padding: "30px 15px", // Reduced padding

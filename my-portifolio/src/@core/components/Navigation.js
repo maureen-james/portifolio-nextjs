@@ -47,7 +47,7 @@ const NavigationBar = () => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#page"
+                href="#home"
                 style={{ color: "#fff", margin: "0 15px" }}
               >
                 Introduction
@@ -60,6 +60,15 @@ const NavigationBar = () => {
                 style={{ color: "#fff", margin: "0 15px" }}
               >
                 About Me
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#experience"
+                style={{ color: "#fff", margin: "0 15px" }}
+              >
+               Experience
               </a>
             </li>
             <li className="nav-item">
